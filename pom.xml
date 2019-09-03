@@ -13,8 +13,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
+			<version>RELEASE</version>
 		</dependency>
 	</dependencies>
 
@@ -34,5 +33,6 @@
 	<modules>
 		<module>phone_producer</module>
 		<module>phone_consumer</module>
+		<module>phone_analysis</module>
 	</modules>
 </project>

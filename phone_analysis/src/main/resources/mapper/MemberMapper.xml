@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mubatis.org/dtd/mybatis-3-mapper.dtd">
+<!--此文件是 MyBatis 的映射文件 -->
+<!--namespace 表示命名空间 -->
+<mapper namespace="top">
+	<select id="findMemberById" parameterType="String"
+		resultType="mybatis.Member">
+		<!--根据队员 ID 获取信息 -->
+		<!--#{} 相当与 ? -->
+		select * from phone_member where member_id = #{id}
+	</select>
+	<insert id="saveMember" parameterType="mybatis.MemberPhone">
+		insert into
+		phone_member(member_id,member_name)
+		values
+		(#{member_id},#{member_name})
+	</insert>
+
+</mapper>
